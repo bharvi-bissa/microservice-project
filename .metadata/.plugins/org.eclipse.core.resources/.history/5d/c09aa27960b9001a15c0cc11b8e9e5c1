@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: account-ms
+    name: account-management-microservice
     
 eureka:
   client:

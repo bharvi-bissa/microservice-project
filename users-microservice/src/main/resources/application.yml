@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: users-microservice
+    name: users-ms
     
 eureka:
   client:
