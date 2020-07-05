@@ -4801,3 +4801,253 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 2020-07-05 17:20:42,059 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-5-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
 2020-07-05 17:20:42,060 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-5-exec-1] Completed initialization in 9 ms
 2020-07-05 17:20:42,061 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-5-exec-1] Request is to process authentication
+2020-07-05 17:31:45,813 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:31:46,694 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:31:46,704 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:31:46,715 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:31:46,722 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:31:49,996 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.548 seconds (JVM running for 1351.121)
+2020-07-05 17:36:28,885 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:36:29,583 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:36:29,595 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:36:29,614 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:36:29,624 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:36:32,870 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.075 seconds (JVM running for 1633.995)
+2020-07-05 17:40:10,691 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:40:11,267 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:40:11,280 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:40:11,296 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:40:11,304 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:40:14,518 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 5.938 seconds (JVM running for 1855.643)
+2020-07-05 17:41:49,315 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-8-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 17:41:49,316 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-8-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 17:41:49,319 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-8-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 17:41:49,319 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-8-exec-1] Completed initialization in 3 ms
+2020-07-05 17:42:43,304 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:42:44,158 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:42:44,171 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:42:44,189 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:42:44,197 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:42:47,442 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.225 seconds (JVM running for 2008.567)
+2020-07-05 17:43:49,035 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:43:49,726 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:43:49,735 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:43:49,747 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:43:49,755 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:43:52,986 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.041 seconds (JVM running for 2074.112)
+2020-07-05 17:45:15,890 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-10-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 17:45:15,891 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-10-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 17:45:15,895 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-10-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 17:45:15,895 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-10-exec-1] Completed initialization in 4 ms
+2020-07-05 17:47:22,802 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:47:23,609 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:47:23,622 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:47:23,642 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:47:23,649 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:47:26,879 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.151 seconds (JVM running for 2288.005)
+2020-07-05 17:47:33,218 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:47:34,043 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:47:34,077 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:47:34,100 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:47:34,113 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:47:37,409 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.12 seconds (JVM running for 2298.535)
+2020-07-05 17:47:52,903 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:47:53,655 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:47:53,672 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:47:53,702 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:47:53,711 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:47:56,936 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.112 seconds (JVM running for 2318.061)
+2020-07-05 17:50:22,653 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:50:23,653 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:50:23,668 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:50:23,682 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:50:23,708 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:50:26,938 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.36 seconds (JVM running for 2468.063)
+2020-07-05 17:51:48,299 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-14-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 17:51:48,301 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-14-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 17:51:48,304 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-14-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 17:51:48,304 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-14-exec-1] Completed initialization in 3 ms
+2020-07-05 17:52:48,735 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:52:49,425 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:52:49,434 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:52:49,460 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:52:49,471 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:52:52,719 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.057 seconds (JVM running for 2613.845)
+2020-07-05 17:56:34,542 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-15-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 17:56:34,573 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-15-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 17:56:34,576 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-15-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 17:56:34,576 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-15-exec-1] Completed initialization in 3 ms
+2020-07-05 17:56:34,577 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-15-exec-1] Request is to process authentication
+2020-07-05 17:57:06,406 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-15-exec-3] Request is to process authentication
+2020-07-05 17:57:26,697 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:57:27,476 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:57:27,492 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:57:27,515 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:57:27,529 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:57:30,843 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.238 seconds (JVM running for 2891.969)
+2020-07-05 17:57:46,324 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 17:57:47,002 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 17:57:47,011 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 17:57:47,028 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 17:57:47,036 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 17:57:50,271 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.02 seconds (JVM running for 2911.396)
+2020-07-05 17:58:46,683 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-17-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 17:58:46,684 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-17-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 17:58:46,694 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-17-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 17:58:46,694 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-17-exec-1] Completed initialization in 10 ms
+2020-07-05 17:58:46,697 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-17-exec-1] Request is to process authentication
+2020-07-05 18:00:45,084 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 18:00:45,949 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 18:00:45,976 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 18:00:46,000 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 18:00:46,016 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 18:00:49,232 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.225 seconds (JVM running for 3090.358)
+2020-07-05 18:01:55,857 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 18:01:56,648 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 18:01:56,662 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 18:01:56,681 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 18:01:56,692 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 18:01:59,939 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.157 seconds (JVM running for 3161.065)
+2020-07-05 18:04:25,709 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-19-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 18:04:25,710 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-19-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 18:04:25,715 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-19-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 18:04:25,715 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-19-exec-1] Completed initialization in 5 ms
+2020-07-05 18:04:25,735 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-auto-19-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.app.users.security.GatewayFilter.doFilterInternal(GatewayFilter.java:29)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-05 18:04:25,771 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-19-exec-1] "ERROR" dispatch for POST "/error", parameters={}
+2020-07-05 18:04:25,778 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-19-exec-1] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-07-05 18:04:25,881 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-19-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 18:04:25,881 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-19-exec-1] Writing [{timestamp=Sun Jul 05 18:04:25 IST 2020, status=500, error=Internal Server Error, trace=java.lang.Nu (truncated)...]
+2020-07-05 18:04:25,903 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-19-exec-1] Exiting from "ERROR" dispatch, status 500
+2020-07-05 18:10:08,301 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 18:10:09,209 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor GatewayFilter() is undefined
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.app.users.UsersMicroserviceApplication.main(UsersMicroserviceApplication.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor GatewayFilter() is undefined
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 27 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor GatewayFilter() is undefined
+
+	at com.app.users.security.WebSecurity.configure(WebSecurity.java:33)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:94)
+	at com.app.users.security.WebSecurity$$EnhancerBySpringCGLIB$$a3fb79a4.init(<generated>)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104)
+	at jdk.internal.reflect.GeneratedMethodAccessor342.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 28 common frames omitted
+2020-07-05 18:10:21,712 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 18:10:22,377 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 18:10:22,385 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 18:10:22,396 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 18:10:22,410 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 18:10:25,643 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.004 seconds (JVM running for 3666.768)
+2020-07-05 18:11:34,606 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-21-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 18:11:34,607 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-21-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 18:11:34,610 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-21-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 18:11:34,610 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-21-exec-1] Completed initialization in 3 ms
+2020-07-05 18:11:34,610 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-21-exec-1] Request is to process authentication
+2020-07-05 18:16:19,856 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 18:16:20,657 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 18:16:20,669 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 18:16:20,687 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 18:16:20,697 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 18:16:23,953 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.17 seconds (JVM running for 4025.079)
+2020-07-05 18:17:27,587 INFO com.app.users.UsersMicroserviceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-07-05 18:17:28,306 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-05 18:17:28,319 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2020-07-05 18:17:28,339 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-05 18:17:28,346 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-05 18:17:31,563 INFO com.app.users.UsersMicroserviceApplication [restartedMain] Started UsersMicroserviceApplication in 6.057 seconds (JVM running for 4092.688)
+2020-07-05 18:20:33,916 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-07-05 18:20:33,917 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] Detected StandardServletMultipartResolver
+2020-07-05 18:20:33,920 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-05 18:20:33,920 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] Completed initialization in 3 ms
+2020-07-05 18:20:33,921 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-1] Request is to process authentication

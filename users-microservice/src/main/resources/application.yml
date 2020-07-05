@@ -23,7 +23,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     
 gateway:
-  ip: 172.18.0.1
+  ip: 192.168.4.11
  
 token:
   secret: secret
