@@ -24,4 +24,11 @@ eureka:
     
 gateway:
   ip: 172.18.0.1
+ 
+token:
+  secret: secret
+  exp_time: 86400
+  
+custom:
+  login_url: /users/login
    

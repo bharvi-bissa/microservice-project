@@ -8,6 +8,7 @@ public class UserDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 229266548226440528L;
+	
 	private String firstName;
 	private String lastName;
 	private String userId;
@@ -75,10 +76,6 @@ public class UserDto implements Serializable {
 
 	public void setEncryptedPassword(String encryptedPassword) {
 		this.encryptedPassword = encryptedPassword;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 
 }
