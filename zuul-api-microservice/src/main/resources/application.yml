@@ -11,3 +11,18 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
+      
+authorization:
+  token:
+    header:
+      name: Authorization
+      prefix: Bearer
+
+token:
+  secret: secret
+  
+user:
+  microservice:
+    path:
+      login: /users-ms/users/login
+      signup: /users-ms/users

@@ -5051,3 +5051,300 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2020-07-05 18:20:33,920 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
 2020-07-05 18:20:33,920 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] Completed initialization in 3 ms
 2020-07-05 18:20:33,921 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-1] Request is to process authentication
+2020-07-05 19:04:38,962 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-4] POST "/users", parameters={}
+2020-07-05 19:04:38,963 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-4] Mapped to com.app.users.controller.UserController#createUser(UserRequestModel)
+2020-07-05 19:04:38,974 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-4] Read "application/json;charset=UTF-8" to [UserRequestModel [firstName=cool, lastName=bro, email=agai1n@gmail.com, password=12345678]]
+2020-07-05 19:04:42,978 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/xml]
+2020-07-05 19:04:42,979 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-4] Writing [com.app.users.ui.model.CreateUserResponseModel@64e8e4c2]
+2020-07-05 19:04:42,980 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-4] Completed 201 CREATED
+2020-07-05 19:04:59,690 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-5] POST "/users", parameters={}
+2020-07-05 19:04:59,691 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-5] Mapped to com.app.users.controller.UserController#createUser(UserRequestModel)
+2020-07-05 19:04:59,692 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-5] Read "application/json;charset=UTF-8" to [UserRequestModel [firstName=cool, lastName=bro, email=agai1n@gmail.com, password=12345678]]
+2020-07-05 19:05:00,005 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-auto-23-exec-5] Duplicate entry 'agai1n@gmail.com' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+2020-07-05 19:05:00,590 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-5] Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_6dotkott2kjsp8vw4d0m25fb7]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2020-07-05 19:05:00,592 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-auto-23-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_6dotkott2kjsp8vw4d0m25fb7]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'agai1n@gmail.com' for key 'UK_6dotkott2kjsp8vw4d0m25fb7'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3254)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3779)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:348)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1360)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:451)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3210)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2378)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:534)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:632)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:386)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy298.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at com.sun.proxy.$Proxy294.save(Unknown Source)
+	at com.app.users.service.UsersServiceImpl.createUser(UsersServiceImpl.java:37)
+	at com.app.users.controller.UserController.createUser(UserController.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.app.users.security.GatewayFilter.doFilterInternal(GatewayFilter.java:37)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-05 19:05:00,594 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-5] "ERROR" dispatch for POST "/error", parameters={}
+2020-07-05 19:05:00,594 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-5] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-07-05 19:05:00,598 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-5] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:05:00,598 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-5] Writing [{timestamp=Sun Jul 05 19:05:00 IST 2020, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2020-07-05 19:05:00,602 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-5] Exiting from "ERROR" dispatch, status 500
+2020-07-05 19:06:13,829 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-6] POST "/users", parameters={}
+2020-07-05 19:06:13,830 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-6] Mapped to com.app.users.controller.UserController#createUser(UserRequestModel)
+2020-07-05 19:06:13,830 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-6] Read "application/json;charset=UTF-8" to [UserRequestModel [firstName=cool, lastName=bro, email=foo@gmail.com, password=12345678]]
+2020-07-05 19:06:14,113 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/xml]
+2020-07-05 19:06:14,113 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-6] Writing [com.app.users.ui.model.CreateUserResponseModel@8f2474]
+2020-07-05 19:06:14,115 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-6] Completed 201 CREATED
+2020-07-05 19:07:41,120 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-8] Request is to process authentication
+2020-07-05 19:07:57,525 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-9] GET "/users/status/check", parameters={}
+2020-07-05 19:07:57,525 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-9] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:07:57,541 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-9] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:07:57,541 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-9] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:07:57,543 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-9] Completed 200 OK
+2020-07-05 19:38:56,410 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-1] Request is to process authentication
+2020-07-05 19:39:09,644 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-2] GET "/users/status/check", parameters={}
+2020-07-05 19:39:09,644 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-2] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:39:09,645 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-2] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:39:09,645 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-2] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:39:09,650 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-2] Completed 200 OK
+2020-07-05 19:39:56,107 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-3] POST "/users", parameters={}
+2020-07-05 19:39:56,107 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-3] Mapped to com.app.users.controller.UserController#createUser(UserRequestModel)
+2020-07-05 19:39:56,108 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-3] Read "application/json;charset=UTF-8" to [UserRequestModel [firstName=bar, lastName=bro, email=bar@gmail.com, password=12345678]]
+2020-07-05 19:39:56,986 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/xml]
+2020-07-05 19:39:56,986 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-3] Writing [com.app.users.ui.model.CreateUserResponseModel@7262fade]
+2020-07-05 19:39:56,989 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-3] Completed 201 CREATED
+2020-07-05 19:40:13,429 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-4] Request is to process authentication
+2020-07-05 19:40:13,545 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-4] Authentication request failed: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:93)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at com.app.users.security.AuthenticationFilter.attemptAuthentication(AuthenticationFilter.java:51)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.app.users.security.GatewayFilter.doFilterInternal(GatewayFilter.java:37)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-07-05 19:40:13,545 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-4] Updated SecurityContextHolder to contain null Authentication
+2020-07-05 19:40:13,546 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-4] Delegating to authentication failure handler org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler@2a1990f8
+2020-07-05 19:40:13,547 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-4] "ERROR" dispatch for POST "/error", parameters={}
+2020-07-05 19:40:13,547 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-4] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-07-05 19:40:13,548 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:40:13,548 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-auto-23-exec-4] Writing [{timestamp=Sun Jul 05 19:40:13 IST 2020, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
+2020-07-05 19:40:13,549 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-4] Exiting from "ERROR" dispatch, status 401
+2020-07-05 19:40:29,616 DEBUG com.app.users.security.AuthenticationFilter [http-nio-auto-23-exec-5] Request is to process authentication
+2020-07-05 19:41:02,152 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-6] GET "/users/status/check", parameters={}
+2020-07-05 19:41:02,152 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-6] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:02,153 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-6] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:02,153 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-6] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:02,154 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-6] Completed 200 OK
+2020-07-05 19:41:04,405 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-7] GET "/users/status/check", parameters={}
+2020-07-05 19:41:04,405 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-7] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:04,406 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-7] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:04,406 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-7] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:04,406 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-7] Completed 200 OK
+2020-07-05 19:41:05,059 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-8] GET "/users/status/check", parameters={}
+2020-07-05 19:41:05,059 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-8] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:05,060 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-8] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:05,060 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-8] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:05,060 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-8] Completed 200 OK
+2020-07-05 19:41:05,884 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-9] GET "/users/status/check", parameters={}
+2020-07-05 19:41:05,884 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-9] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:05,885 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-9] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:05,885 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-9] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:05,886 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-9] Completed 200 OK
+2020-07-05 19:41:06,491 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-10] GET "/users/status/check", parameters={}
+2020-07-05 19:41:06,491 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-10] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:06,492 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-10] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:06,492 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-10] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:06,493 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-10] Completed 200 OK
+2020-07-05 19:41:07,233 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] GET "/users/status/check", parameters={}
+2020-07-05 19:41:07,233 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-1] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:07,234 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-1] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:07,234 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-1] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:07,236 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-1] Completed 200 OK
+2020-07-05 19:41:07,891 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-2] GET "/users/status/check", parameters={}
+2020-07-05 19:41:07,891 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-2] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:07,892 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-2] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:07,892 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-2] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:07,895 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-2] Completed 200 OK
+2020-07-05 19:41:08,440 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-3] GET "/users/status/check", parameters={}
+2020-07-05 19:41:08,440 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-3] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:08,441 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-3] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:08,441 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-3] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:08,442 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-3] Completed 200 OK
+2020-07-05 19:41:09,041 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-4] GET "/users/status/check", parameters={}
+2020-07-05 19:41:09,042 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-4] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:09,043 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-4] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:09,043 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-4] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:09,044 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-4] Completed 200 OK
+2020-07-05 19:41:09,978 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-5] GET "/users/status/check", parameters={}
+2020-07-05 19:41:09,978 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-auto-23-exec-5] Mapped to com.app.users.controller.UserController#check()
+2020-07-05 19:41:09,979 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-5] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+2020-07-05 19:41:09,979 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-auto-23-exec-5] Writing ["users-ms : Active on port : 36833"]
+2020-07-05 19:41:09,980 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-auto-23-exec-5] Completed 200 OK
