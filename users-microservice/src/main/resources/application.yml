@@ -4,6 +4,16 @@ server:
 spring:
   application:
     name: users-ms
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_users
+    username: root
+    password: root
+  jpa:
+    generate-ddl: true 
+   
+logging:
+  level:
+    org.springframework.web: debug
     
 eureka:
   client:
@@ -12,4 +22,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     
+gateway:
+  ip: 172.18.0.1
    
