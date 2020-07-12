@@ -27,7 +27,7 @@ gateway:
  
 token:
   secret: secret
-  exp_time: 86400
+  exp_time: 8640000
   
 custom:
   login_url: /users/login

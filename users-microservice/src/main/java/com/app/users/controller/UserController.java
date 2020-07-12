@@ -33,7 +33,7 @@ public class UserController {
 	@GetMapping("/status/check")
 	public String check() {
 		return env.getProperty("spring.application.name") + " : Active on port : "
-				+ env.getProperty("local.server.port");
+				+ env.getProperty("local.server.port") + ", With Secret :: "+env.getProperty("token.secret");
 	}
 
 	@PostMapping(
