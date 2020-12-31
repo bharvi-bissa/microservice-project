@@ -24,6 +24,8 @@ eureka:
     
 gateway:
   ip: 192.168.29.113
+  filter:
+    enabled : false
  
 token:
   secret: secret
