@@ -5,7 +5,7 @@ spring:
   application:
     name: users-ms
   datasource:
-    url: jdbc:mysql://localhost:3306/ms_users
+    url: jdbc:mysql://localhost:3306/ms_users?createDatabaseIfNotExist=true
     username: root
     password: root
   jpa:
@@ -23,7 +23,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     
 gateway:
-  ip: 192.168.4.11
+  ip: 192.168.29.113
  
 token:
   secret: secret
