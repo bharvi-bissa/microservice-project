@@ -17,7 +17,9 @@ public class FeignErrorDecoder implements ErrorDecoder {
 			// some operation
 			break;
 		case 404: {
-			return new ResponseStatusException(HttpStatus.valueOf(response.status()),"Route Not Found");
+			if(methodKey.contains("getProducts")) {
+				return new ResponseStatusException(HttpStatus.valueOf(response.status()),"getProducts Not Found");
+			}
 		}
 		default:
 			new Exception(response.reason());

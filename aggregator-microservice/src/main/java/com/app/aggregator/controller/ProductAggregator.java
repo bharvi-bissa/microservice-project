@@ -13,8 +13,6 @@ import org.springframework.web.client.RestTemplate;
 import com.app.aggregator.data.ProductsServiceClient;
 import com.app.aggregator.entity.Product;
 
-import feign.FeignException;
-
 @RestController
 @RequestMapping("/client/product")
 public class ProductAggregator {
@@ -33,9 +31,7 @@ public class ProductAggregator {
 		 * HttpMethod.GET, null, new ParameterizedTypeReference<List<Product>>() { });
 		 */
 		List<Product> productList = null;
-
 		productList = productsServiceClient.getProducts();
-
 		return ResponseEntity.status(HttpStatus.OK).body(productList);
 	}
 }
