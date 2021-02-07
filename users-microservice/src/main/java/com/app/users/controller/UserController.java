@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import com.app.users.service.UsersService;
 import com.app.users.shared.UserDto;
@@ -24,16 +25,14 @@ import com.app.users.ui.model.UserRequestModel;
 @RequestMapping("/users")
 public class UserController {
 
-	@Autowired
-	Environment env;
-
-	@Autowired
-	UsersService usersService;
-
+	@Autowired Environment env;
+	@Autowired RestTemplate restTemplate;
+	@Autowired UsersService usersService;
+	
 	@GetMapping("/status/check")
 	public String check() {
 		return env.getProperty("spring.application.name") + " : Active on port : "
-				+ env.getProperty("local.server.port") + ", With Secret :: "+env.getProperty("token.secret");
+				+ env.getProperty("local.server.port") + ", With Secret :: "+env.getProperty("token.secret")+" with exp time "+env.getProperty("token.exp_time");
 	}
 
 	@PostMapping(
